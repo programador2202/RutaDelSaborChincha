@@ -1,0 +1,168 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.hero {
+      background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),url(../img/PICARONES\ \(1\).jpg)no-repeat;
+      background-size: cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .categoria-icono {
+      font-size: 2.5rem;
+      color: #dc3545;
+    }
+    .categoria-card:hover {
+      transform: scale(1.03);
+      transition: 0.3s;
+    }
+
+
+    .home {
+  background-color: #000000;
+  padding: 30px;
+}
+
+.home h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 30px;
+}
+
+.subtitulo h3 {
+  color: #000;
+  font-weight: 600;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  transition: transform 0.5s ease;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.card a {
+  color: #fff;
+  background-color: #5A0012; 
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+  background-color: #ffc107; /* dorado suave */
+  color: #000000;
+}
+
+.auspiciadores h1{
+    text-align: center;
+}
+
+.container1 {
+  display: flex;
+  gap: 1rem;
+  padding: 110px;
+}
+
+.auspiciadores h1 {
+  padding: 30px;
+  color: black;
+}
+
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow: hidden;        
+  height: 300px;            
+  position: relative;
+  padding: 20px;
+}
+
+.card-auspiciadores {
+  flex: 1;
+  height: 100%;
+  transition: all 400ms ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card-auspiciadores > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Movimiento alternado controlado */
+.card-auspiciadores:nth-child(odd) {
+  transform: translateY(-10px);
+}
+
+.card-auspiciadores:nth-child(even) {
+  transform: translateY(10px);
+}
+
+/* Efecto de hover en grupo */
+.container1:hover .card-auspiciadores:not(:hover) {
+  filter: grayscale(50%);
+}
+
+/* Expandir tarjeta sin afectar el layout */
+.card-auspiciadores:hover {
+  flex: 1.5;
+  z-index: 2;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contacto{
+    background-color: black;
+    color: white;
+    padding: 120px;
+}
+
+.contacto img {
+  border: 5px solid red;
+  padding: 5px; 
+  background-color: white; 
+  border-radius: 10px; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+}
+
+.contacto button{
+    height: 50px;
+    width: 150px;
+    background-color: #5A0012;
+    color: white;
+}
+
+.contacto button:hover{
+    background-color: #ffc107;
+    color: black;
+}
