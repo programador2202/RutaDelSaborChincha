@@ -1,16 +1,3 @@
-<?php
-
-require_once 'config/Conexion.php';          
-require_once 'models/Categoria.php';       
-
-$conexion = new Conexion();                  
-$pdo = $conexion->getConexion();            
-
-$categoriaModel = new Categoria($pdo);       
-$categorias = $categoriaModel->getAll();     
-?>
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -95,11 +82,7 @@ $categorias = $categoriaModel->getAll();
           <div class="col-md-3">
             <select class="form-select" name="categoria">
              <option selected disabled>Tipo de comida</option>
-              <?php foreach ($categorias as $categoria): ?>
-              <option value="<?= htmlspecialchars($categoria['idcategoria']) ?>">
-              <?= htmlspecialchars($categoria['nombre']) ?>
               </option>
-              <?php endforeach; ?>
             </select>
           </div>
           <div class="col-md-3">
@@ -360,8 +343,8 @@ $categorias = $categoriaModel->getAll();
           <h5 class="text-uppercase mb-4 fw-bold text-warning">Contacto</h5>
           <p><i class="fas fa-home me-2"></i> Chincha Alta, Perú</p>
           <p><i class="fas fa-envelope me-2"></i> info@larutadelsabor.com</p>
-          <p><i class="fas fa-phone me-2"></i> +51 999 999 999</p>
-        </div>
+          <p><i class="fas fa-phone me-2"></i> +51 955 365 019</p>
+        </div> 
       </div>
       <hr class="mb-4">
       <div class="row align-items-center">
@@ -380,6 +363,27 @@ $categorias = $categoriaModel->getAll();
   </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const selectCategoria = document.querySelector('select[name="categoria"]');
+
+  fetch("http://localhost/RutadelSaborChincha/controllers/Categoria.php?task=getAll")
+    .then(response => response.json())
+    .then(data => {
+      data.forEach(categoria => {
+        const option = document.createElement("option");
+        option.value = categoria.idcategoria;
+        option.textContent = categoria.nombre;
+        selectCategoria.appendChild(option);
+      });
+    })
+    .catch(error => {
+      console.error("Error al cargar categorías:", error);
+    });
+});
+</script>
+
 
 </body>
 </html>
