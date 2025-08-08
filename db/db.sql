@@ -63,13 +63,7 @@ INSERT INTO PLATOS (imagen, nom_platos, descripcion, precio, idcategoria, idrest
 ('img/platos/chancho_tamarindo.jpg', 'Chancho en Salsa Tamarindo', 'Carne de cerdo crocante bañada en salsa de tamarindo, estilo oriental.', 29.90, 1, 2),
 ('img/platos/tallarines_saltados.jpg', 'Tallarines Saltados', 'Fideos salteados con verduras, pollo y salsa oriental.', 25.00, 1, 2),
 ('img/platos/aji_de_gallina.jpg', 'Ají de Gallina', 'Tradicional plato peruano a base de gallina deshilachada y crema de ají.', 24.50, 6, 3),
-('img/platos/lomo_saltado.jpg', 'Lomo Saltado', 'Trozos de carne salteados con cebolla, tomate y papas fritas.', 26.00, 6, 3),
-('img/platos/lima.jpg', 'Hamburguesa Cheddar', 'Hamburguesa de res con doble queso cheddar, lechuga y salsa de la casa.', 20.00, 2, 4),
-('img/platos/hamburguesa_bacon.jpg', 'Burger con Bacon', 'Carne de res, tocino crocante, queso, lechuga y cebolla caramelizada.', 21.50, 2, 4),
-('img/platos/sushi_mix.jpg', 'Sushi Mix', 'Variedad de makis y nigiris con pescados frescos.', 35.00, 1, 5),
-('img/platos/ramen.jpg', 'Ramen de Cerdo', 'Sopa japonesa con fideos, huevo cocido y panceta de cerdo.', 33.00, 1, 5),
-('img/platos/makis_fusion.jpg', 'Makis Fusión', 'Makis con rellenos de salmón, palta y cobertura crocante.', 36.00, 1, 6),
-('img/platos/gyoza.jpg', 'Gyozas de Pollo', 'Empanaditas japonesas rellenas de pollo con salsa de soya.', 18.00, 1, 6);
+('img/platos/lomo_saltado.jpg', 'Lomo Saltado', 'Trozos de carne salteados con cebolla, tomate y papas fritas.', 26.00, 6, 3);
 
 SELECT*FROM PLATOS;
 
