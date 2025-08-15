@@ -10,7 +10,8 @@
 </head>
 <body>
 <!----MENU PRINCIPAL--->
-  <header>
+  
+<header>
     <nav class="navbar navbar-expand-lg bg-body-white shadow-sm">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -32,17 +33,6 @@
             <a class="nav-link" href="#">
               <i class="fas fa-users me-1"></i> Nosotros
             </a>
-          </li>
-          <li class="nav-item dropdown mx-3">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-              <i class="fas fa-utensils me-1"></i> Categorías
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Mariscos</a></li>
-              <li><a class="dropdown-item" href="#">Criolla</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Postres</a></li>
-            </ul>
           </li>
           <li class="nav-item mx-3">
             <a class="nav-link" href="#">
@@ -269,57 +259,10 @@
 <br>
 <br>
 
-<section class="contacto ">
-  <div class="row align-items-center ">
-    <!-- Imagen -->
-    <div class="col-md-6 text-center">
-    <img src="public/img/inicio_logo.png" alt="" class="img-fluid rounded">
-    </div>
-    <div class="col-md-6 unete-texto">
-      <h2><b>¡Únete ahora y lleva tu negocio al siguiente nivel!</b></h2>
-      <p>Si tienes un restaurante, negocio de comida o una bodega de vinos en Chincha... ¡trabajemos juntos!</p>
-      <p>Con nosotros lograrás un alcance más amplio, publicidad exclusiva y fotos profesionales tendrás oportunidad para destacar en el mercado.</p>
-   <button type="button" class="btn btn-danger w-70 mt-3" data-bs-toggle="modal" data-bs-target="#modalUnete">
-  <b>Unirme Ahora</b>
-</button>
-    </div>
-  </div>
-</section>
-<!-- Modal -->
-<div class="modal fade" id="modalUnete" tabindex="-1" aria-labelledby="modalUneteLabel" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalUneteLabel">Únete a Ruta del Sabor Chincha</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="nombreNegocio" class="form-label">Nombre del negocio</label>
-            <input type="text" class="form-control" id="nombreNegocio" required>
-          </div>
-          <div class="mb-3">
-            <label for="tipoNegocio" class="form-label">Tipo (restaurante, bodega, etc.)</label>
-            <input type="text" class="form-control" id="tipoNegocio" required>
-          </div>
-          <div class="mb-3">
-            <label for="telefono" class="form-label">Teléfono</label>
-            <input type="tel" class="form-control" id="telefono" required>
-          </div>
-          <div class="mb-3">
-            <label for="correo" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="correo" required>
-          </div>
-          <button type="submit" class="btn btn-danger">Enviar solicitud</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+
 </main>
 
-<footer class="bg-white text-black pt-5 pb-4 px-4 text-center text-md-start">
+<footer class="bg-black text-white pt-5 pb-4 px-4 text-center text-md-start">
     <div class=" text-center text-md-start">
       <div class="row text-center text-md-start">
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -328,16 +271,16 @@
         </div>
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 fw-bold text-warning">Enlaces</h5>
-          <p><a href="#" class="text-black text-decoration-none">Inicio</a></p>
-          <p><a href="#" class="text-black text-decoration-none">Nosotros</a></p>
-          <p><a href="#" class="text-black text-decoration-none">Servicios</a></p>
-          <p><a href="#" class="text-black text-decoration-none">Contacto</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Inicio</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Nosotros</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Servicios</a></p>
+          <p><a href="#" class="text-white text-decoration-none">Contacto</a></p>
         </div>
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 fw-bold text-warning">Redes Sociales</h5>
-          <p><a href="#" class="text-black text-decoration-none"><i class="fab fa-facebook me-2"></i>Facebook</a></p>
-          <p><a href="#" class="text-black text-decoration-none"><i class="fab fa-instagram me-2"></i>Instagram</a></p>
-          <p><a href="#" class="text-black text-decoration-none"><i class="fab fa-whatsapp me-2"></i>WhatsApp</a></p>
+          <p><a href="#" class="text-white text-decoration-none"><i class="fab fa-facebook me-2"></i>Facebook</a></p>
+          <p><a href="#" class="text-white text-decoration-none"><i class="fab fa-instagram me-2"></i>Instagram</a></p>
+          <p><a href="#" class="text-white text-decoration-none"><i class="fab fa-whatsapp me-2"></i>WhatsApp</a></p>
         </div>
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 fw-bold text-warning">Contacto</h5>
@@ -353,9 +296,9 @@
         </div>
         <div class="col-md-5 col-lg-4">
           <div class="text-center text-md-end">
-            <a href="#" class="text-black me-4"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="text-black me-4"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="text-black me-4"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="text-white me-4"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-4"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white me-4"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
@@ -363,6 +306,7 @@
   </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
 <script>
   
